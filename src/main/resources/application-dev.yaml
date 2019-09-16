@@ -1,0 +1,16 @@
+# one data source
+spring:
+  datasource:
+    hikari:
+      one:
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/one?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+        username: root
+        password: root
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        maximum-pool-size: 5
+      two:
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/two?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+        username: root
+        password: root
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        maximum-pool-size: 5
